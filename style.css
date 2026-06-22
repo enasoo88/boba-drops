@@ -1,4 +1,17 @@
 body{
-    background-color: rgb(255, 255, 255);
-text-align:center}
-p {color:black; font-size: 22px; position: absolute;
+    background-color: white;
+    text-align: center;
+}
+p {
+    color:black;
+    font-size: 22px;
+}
+ .hero{
+    background-image:url(https://i.pinimg.com/control1/736x/97/19/fc/9719fc8018a6ed0ddb5053260c249c81.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ }
