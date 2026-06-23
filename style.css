@@ -1,6 +1,6 @@
 body{
-    background-color: white;
-    text-align: center;
+    background-color:white;
+    text-align:center;
 }
 p {
     color:black;
@@ -15,3 +15,60 @@ p {
     align-items: center;
     min-height: 100vh;
  }
+ .my-btn{
+    display: inline-block;
+    padding: 14px 32px;
+    background-image: linear-gradient(135deg, #4caf50, #2e7d32);
+    background-size: 200% auto;
+    color:white;
+    font-size:18px;
+    font-weight: bold;
+    text-decoration:none;
+    border-radius:30px;
+    border:none;
+    box-shadow:0 4px 15px rgba(46, 125, 50,;0.25), 0 1px 2px rgba(46, 125, 50, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all o.4s cubic-bezier(0.34, 1.56, 0,64, 1);
+    user-select: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+ }
+ .my-btn:hover{
+    background-position: right center;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.4);
+ }
+ .my-btn:active{
+   filter:brightness(0.85)
+    transform:translateY(-1px) scale(0.98);
+    box-shadow: 0 3px 10px rgba(46, 125, 50, 0.4);
+ }
+ html{
+   scroll-behavior: smooth;
+ }
+::selection{
+   background-color: #2e7d32;
+   color: white;
+}
+img{
+   object-fit: cover
+}
+.hero h1{
+   background: linear-gradient(270deg, #4caf50, #8BC34A, #FFEB3B);
+   background-size: 600% 600%;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: moveGradient 8s ease infinite;
+}
+@keyframes moveGradient {
+   0%{background-position: 0% 50%}
+   50%{background-position: 100% 50%}
+   100%{background-position: 0% 50%}
+}
+.tip-box{
+   background-color: #e8f5e9;
+   border-left: 5px solid #2e7d32;
+   padding:15px;
+   border-radius: 6px;
+   margin: 20px 0;
+   font-size: 0.95rem;
+}
